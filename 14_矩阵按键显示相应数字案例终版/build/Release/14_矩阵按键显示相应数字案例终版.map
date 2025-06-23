@@ -1,0 +1,199 @@
+LX51 LINKER/LOCATER V4.66.100.0                                                         06/23/2025  14:47:12  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.100.0, INVOKED BY:
+D:\DEVELOPMENT\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\RELEASE\.OBJ\SRC\COM\COM_UTIL.O, .\BUILD\RELEASE\.OBJ\SRC\INT\INT_DIGTAL
+>> TUBE.O, .\BUILD\RELEASE\.OBJ\SRC\INT\INT_MATRIXKEY.O, .\BUILD\RELEASE\.OBJ\SRC\MAIN.O TO .\BUILD\RELEASE\14_¾ØÕó°´¼üÏ
+>> ÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ PRINT (.\build\Release\14_¾ØÕó°´¼üÏÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\RELEASE\.OBJ\SRC\COM\COM_UTIL.O (COM_UTIL)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_DIGTALTUBE.O (INT_DIGTALTUBE)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_MATRIXKEY.O (INT_MATRIXKEY)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?ULDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?ULCMP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\RELEASE\14_¾ØÕó°´¼üÏÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ (COM_UTIL)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0002EAH   CODE
+I:000000H   I:000000H   I:00007FH   000024H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\RELEASE\14_¾ØÕó°´¼üÏÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ (COM_UTIL)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000019H   000012H   BYTE   UNIT     DATA           ?DT?INT_DIGTALTUBE
+00001AH   00001FH   000006H   BYTE   UNIT     DATA           _DATA_GROUP_
+000020H   000023H   000004H   BYTE   UNIT     DATA           ?DT?INT_MATRIXKEY
+000024H   000024H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   0000E1H   0000DFH   BYTE   UNIT     CODE           ?C?LIB_CODE
+0000E2H   00016DH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00016EH   0001ECH   00007FH   BYTE   UNIT     CODE           ?PR?INT_MATRIXKEY_CHECKKEY?INT_MATRIXKEY
+0001EDH   00025BH   00006FH   BYTE   UNIT     CODE           ?PR?_INT_DIGTALTUBE_SETBUFFER?INT_DIGTALTUBE
+00025CH   00027FH   000024H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000280H   00029FH   000020H   BYTE   UNIT     CODE           ?PR?INT_DIGTALTUBE_REFRESH?INT_DIGTALTUBE
+0002A0H   0002BCH   00001DH   BYTE   UNIT     CODE           ?C_INITSEG
+0002BDH   0002D6H   00001AH   BYTE   UNIT     CODE           ?PR?_DELAYMS?COM_UTIL
+0002D7H   0002E4H   00000EH   BYTE   UNIT     CODE           ?PR?_INT_DIGTALTUBE_SINGLE?INT_DIGTALTUBE
+0002E5H   0002E9H   000005H   BYTE   UNIT     CODE           ?PR?INT_DIGTALTUBE_INIT?INT_DIGTALTUBE
+
+
+
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/23/2025  14:47:12  PAGE 2
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\RELEASE\14_¾ØÕó°´¼üÏÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ (COM_UTIL)
+
+
+FUNCTION/MODULE                                BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE                    START  STOP  START  STOP
+======================================================================
+?C_C51STARTUP                                 ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                                     ----- -----  001AH 001AH
+  +--> INT_DIGTALTUBE_INIT/INT_DIGTALTUBE
+  +--> _INT_DIGTALTUBE_SETBUFFER/INT_DIGTALTUBE
+  +--> INT_MATRIXKEY_CHECKKEY/INT_MATRIXKEY
+  +--> INT_DIGTALTUBE_REFRESH/INT_DIGTALTUBE
+
+INT_DIGTALTUBE_INIT/INT_DIGTALTUBE            ----- -----  ----- -----
+
+_INT_DIGTALTUBE_SETBUFFER/INT_DIGTALTUBE      ----- -----  001BH 001FH
+
+INT_MATRIXKEY_CHECKKEY/INT_MATRIXKEY          ----- -----  001BH 001BH
+  +--> _DELAYMS/COM_UTIL
+
+_DELAYMS/COM_UTIL                             ----- -----  ----- -----
+
+INT_DIGTALTUBE_REFRESH/INT_DIGTALTUBE         ----- -----  001BH 001BH
+  +--> _INT_DIGTALTUBE_SINGLE/INT_DIGTALTUBE
+  +--> _DELAYMS/COM_UTIL
+
+_INT_DIGTALTUBE_SINGLE/INT_DIGTALTUBE         ----- -----  ----- -----
+
+?C_INITSEG                                    ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\RELEASE\14_¾ØÕó°´¼üÏÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ (COM_UTIL)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010000D1H   CODE     ---       ?C?ULCMP
+      0100003FH   CODE     ---       ?C?ULDIV
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000129H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010002BDH   CODE     ---       _Delayms
+      010001EDH   CODE     ---       _Int_DigtalTube_setBuffer
+      010002E5H   CODE     ---       Int_DigtalTube_Init
+      01000280H   CODE     ---       Int_DigtalTube_Refresh
+      0100016EH   CODE     ---       Int_MatrixKey_CheckKey
+      0100025CH   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\14_¾ØÕó°´¼üÏÔÊ¾ÏàÓ¦Êý×Ö°¸ÀýÖÕ°æ (COM_UTIL)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       COM_UTIL
+      010002BDH   PUBLIC    CODE     ---       _Delayms
+
+      010002BDH   BLOCK     CODE     ---       LVL=0
+      010002BDH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     VOID      i
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/23/2025  14:47:12  PAGE 3
+
+
+      00000004H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       INT_DIGTALTUBE
+      010001EDH   PUBLIC    CODE     ---       _Int_DigtalTube_setBuffer
+      01000280H   PUBLIC    CODE     ---       Int_DigtalTube_Refresh
+      010002E5H   PUBLIC    CODE     ---       Int_DigtalTube_Init
+
+      010002E5H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002D7H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000280H   BLOCK     CODE     ---       LVL=0
+      01000280H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000001BH   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001EDH   BLOCK     CODE     ---       LVL=0
+      010001F5H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000001FH   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       INT_MATRIXKEY
+      0100016EH   PUBLIC    CODE     ---       Int_MatrixKey_CheckKey
+
+      0100016EH   BLOCK     CODE     ---       LVL=0
+      0100016EH   BLOCK     CODE     NEAR LAB  LVL=1
+      0000001BH   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      0100025CH   PUBLIC    CODE     ---       main
+
+      0100025CH   BLOCK     CODE     ---       LVL=0
+      0100025CH   BLOCK     CODE     NEAR LAB  LVL=1
+      0000001AH   SYMBOL    DATA     VOID      key
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?ULDIV
+      0100003FH   PUBLIC    CODE     ---       ?C?ULDIV
+
+      ---         MODULE    ---      ---       ?C?ULCMP
+      010000D1H   PUBLIC    CODE     ---       ?C?ULCMP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000129H   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=37.0 xdata=0 const=0 code=746
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
