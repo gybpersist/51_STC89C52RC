@@ -1,0 +1,2 @@
+.\build\Release\.obj\src\main.o TO .\build\Release\05_动态数码管_初级版
+PRINT(.\build\Release\05_动态数码管_初级版.map) REMOVEUNUSED

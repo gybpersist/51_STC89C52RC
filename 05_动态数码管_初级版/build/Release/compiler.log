@@ -1,0 +1,14 @@
+>>> cc
+
+
+
+>>> ld
+
+
+LX51 LINKER/LOCATER V4.66.100.0 - SN: K1DZC-4PZPXC
+COPYRIGHT Copyright (C) 1995-2021, Arm Limited or its Affiliates. All rights reserved.
+@c:\Users\WH-HKB\Desktop\VS51Code\250515_Projects\05_动态数码管_初级版\build\Release\05_动态数码管_初级版.lnp .\build\Release\.obj\src\main.o TO .\build\Release\05_动态数码管_初级版
+PRINT(.\build\Release\05_动态数码管_初级版.map) REMOVEUNUSED
+
+Program Size: data=28.0 xdata=0 const=0 code=247
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
