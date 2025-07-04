@@ -1,0 +1,306 @@
+LX51 LINKER/LOCATER V4.66.100.0                                                         06/24/2025  09:44:00  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.100.0, INVOKED BY:
+D:\DEVELOPMENT\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\RELEASE\.OBJ\SRC\COM\COM_UTIL.O, .\BUILD\RELEASE\.OBJ\SRC\INT\INT_DIGTAL
+>> TUBE.O, .\BUILD\RELEASE\.OBJ\SRC\MAIN.O TO .\BUILD\RELEASE\16_数码管显示小数 PRINT (.\build\Release\16_数码管显示小数
+>> .map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\RELEASE\.OBJ\SRC\COM\COM_UTIL.O (COM_UTIL)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_DIGTALTUBE.O (INT_DIGTALTUBE)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (PRINTF)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPROUND)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPCONVERT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPADD)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FTNPWR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?PLDIIDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?CCASE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (PUTCHAR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (STRLEN)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\RELEASE\16_数码管显示小数 (COM_UTIL)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000B5AH   CODE
+I:000000H   I:000000H   I:00007FH   00004BH   DATA
+I:000020H.0 I:000020H.0 I:00002FH.7 000001H.2 BIT
+C:000000H   C:000000H   C:00FFFFH   000003H   CONST
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\RELEASE\16_数码管显示小数 (COM_UTIL)
+
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/24/2025  09:44:00  PAGE 2
+
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000019H   000012H   BYTE   UNIT     DATA           ?DT?INT_DIGTALTUBE
+00001AH.0 00001FH.7 000006H.0 ---    ---      **GAP**
+000020H.0 000021H.1 000001H.2 BIT    UNIT     BIT            _BIT_GROUP_
+000021H.2 000021H   000000H.6 ---    ---      **GAP**
+000022H   000052H   000031H   BYTE   UNIT     DATA           _DATA_GROUP_
+000053H   000053H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00051AH   000518H   BYTE   UNIT     CODE           ?C?LIB_CODE
+00051BH   000989H   00046FH   BYTE   UNIT     CODE           ?PR?PRINTF?PRINTF
+00098AH   000A1FH   000096H   BYTE   UNIT     CODE           ?PR?_INT_DIGTALTUBE_SETBUFFER?INT_DIGTALTUBE
+000A20H   000AABH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000AACH   000AD2H   000027H   BYTE   UNIT     CODE           ?PR?PUTCHAR?PUTCHAR
+000AD3H   000AF2H   000020H   BYTE   UNIT     CODE           ?PR?INT_DIGTALTUBE_REFRESH?INT_DIGTALTUBE
+000AF3H   000B09H   000017H   BYTE   UNIT     CODE           ?C_INITSEG
+000B0AH   000B1EH   000015H   BYTE   UNIT     CODE           ?PR?_DELAYMS?COM_UTIL
+000B1FH   000B33H   000015H   BYTE   UNIT     CODE           ?PR?_STRLEN?STRLEN
+000B34H   000B46H   000013H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000B47H   000B54H   00000EH   BYTE   UNIT     CODE           ?PR?_INT_DIGTALTUBE_SINGLE?INT_DIGTALTUBE
+000B55H   000B59H   000005H   BYTE   UNIT     CODE           ?PR?INT_DIGTALTUBE_INIT?INT_DIGTALTUBE
+000B5AH   000B5CH   000003H   BYTE   UNIT     CONST          ?CO?INT_DIGTALTUBE
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           000011H   BYTE   UNIT     CODE           ?PR?_DELAY100US?COM_UTIL
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\RELEASE\16_数码管显示小数 (COM_UTIL)
+
+
+FUNCTION/MODULE                                BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE                    START  STOP  START  STOP
+======================================================================
+?C_C51STARTUP                                 ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                                     ----- -----  ----- -----
+  +--> INT_DIGTALTUBE_INIT/INT_DIGTALTUBE
+  +--> _INT_DIGTALTUBE_SETBUFFER/INT_DIGTALTUBE
+  +--> INT_DIGTALTUBE_REFRESH/INT_DIGTALTUBE
+
+INT_DIGTALTUBE_INIT/INT_DIGTALTUBE            ----- -----  ----- -----
+
+_INT_DIGTALTUBE_SETBUFFER/INT_DIGTALTUBE      20H.0 20H.0  0022H 0036H
+  +--> PRINTF/PRINTF
+  +--> _STRLEN/STRLEN
+
+PRINTF/PRINTF                                 20H.1 21H.1  0037H 0052H
+  +--> PUTCHAR/PUTCHAR
+
+PUTCHAR/PUTCHAR                               ----- -----  ----- -----
+
+_STRLEN/STRLEN                                ----- -----  ----- -----
+
+INT_DIGTALTUBE_REFRESH/INT_DIGTALTUBE         ----- -----  0022H 0022H
+  +--> _INT_DIGTALTUBE_SINGLE/INT_DIGTALTUBE
+  +--> _DELAYMS/COM_UTIL
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/24/2025  09:44:00  PAGE 3
+
+
+
+_INT_DIGTALTUBE_SINGLE/INT_DIGTALTUBE         ----- -----  ----- -----
+
+_DELAYMS/COM_UTIL                             ----- -----  ----- -----
+
+?C_INITSEG                                    ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\RELEASE\16_数码管显示小数 (COM_UTIL)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000037H   DATA     ---       ?_PRINTF?BYTE
+      00000037H   DATA     ---       ?_SPRINTF?BYTE
+      010004F5H   CODE     ---       ?C?CCASE
+      010004A6H   CODE     ---       ?C?CLDOPTR
+      0100048DH   CODE     ---       ?C?CLDPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010004D3H   CODE     ---       ?C?CSTPTR
+      0100013CH   CODE     ---       ?C?FPADD
+      01000032H   CODE     ---       ?C?FPCONVERT
+      01000336H   CODE     ---       ?C?FPDIV
+      01000443H   CODE     ---       ?C?FPGETOPN2
+      0100022DH   CODE     ---       ?C?FPMUL
+      01000478H   CODE     ---       ?C?FPNANRESULT
+      01000482H   CODE     ---       ?C?FPOVERFLOW
+      0100045AH   CODE     ---       ?C?FPRESULT
+      0100046EH   CODE     ---       ?C?FPRESULT2
+      01000003H   CODE     ---       ?C?FPROUND
+      01000138H   CODE     ---       ?C?FPSUB
+      0100047FH   CODE     ---       ?C?FPUNDERFLOW
+      01000403H   CODE     ---       ?C?FTNPWR
+      010004E5H   CODE     ---       ?C?PLDIIDATA
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000A67H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+*DEL*:00000000H   CODE     ---       _Delay100us
+      01000B0AH   CODE     ---       _Delayms
+      0100098AH   CODE     ---       _Int_DigtalTube_setBuffer
+      0100057DH   CODE     ---       _PRINTF
+      01000AACH   CODE     ---       _PUTCHAR
+      01000577H   CODE     ---       _SPRINTF
+      01000B1FH   CODE     ---       _STRLEN
+      01000B55H   CODE     ---       Int_DigtalTube_Init
+      01000AD3H   CODE     ---       Int_DigtalTube_Refresh
+      01000B34H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\16_数码管显示小数 (COM_UTIL)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       COM_UTIL
+      01000B0AH   PUBLIC    CODE     ---       _Delayms
+
+      01000B0AH   BLOCK     CODE     ---       LVL=0
+      01000B0AH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     VOID      i
+      00000004H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000005H   SYMBOL    DATA     VOID      i
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/24/2025  09:44:00  PAGE 4
+
+
+
+      ---         MODULE    ---      ---       INT_DIGTALTUBE
+      0100098AH   PUBLIC    CODE     ---       _Int_DigtalTube_setBuffer
+      01000AD3H   PUBLIC    CODE     ---       Int_DigtalTube_Refresh
+      01000B55H   PUBLIC    CODE     ---       Int_DigtalTube_Init
+
+      01000B55H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000B47H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000AD3H   BLOCK     CODE     ---       LVL=0
+      01000AD3H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000022H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100098AH   BLOCK     CODE     ---       LVL=0
+      01000992H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000026H   SYMBOL    DATA     VOID      number_str
+      00000007H   SYMBOL    DATA     VOID      number_str_index
+      00000020H.0 SYMBOL    BIT      VOID      is_dot
+      00000036H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      01000B34H   PUBLIC    CODE     ---       main
+
+      01000B34H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       PRINTF
+      00000037H   PUBLIC    DATA     ---       ?_PRINTF?BYTE
+      00000037H   PUBLIC    DATA     ---       ?_SPRINTF?BYTE
+      0100057DH   PUBLIC    CODE     ---       _PRINTF
+      01000577H   PUBLIC    CODE     ---       _SPRINTF
+
+      ---         MODULE    ---      ---       ?C?FPROUND
+      01000003H   PUBLIC    CODE     ---       ?C?FPROUND
+
+      ---         MODULE    ---      ---       ?C?FPCONVERT
+      01000032H   PUBLIC    CODE     ---       ?C?FPCONVERT
+
+      ---         MODULE    ---      ---       ?C?FPADD
+      0100013CH   PUBLIC    CODE     ---       ?C?FPADD
+      01000138H   PUBLIC    CODE     ---       ?C?FPSUB
+
+      ---         MODULE    ---      ---       ?C?FPMUL
+      0100022DH   PUBLIC    CODE     ---       ?C?FPMUL
+
+      ---         MODULE    ---      ---       ?C?FPDIV
+      01000336H   PUBLIC    CODE     ---       ?C?FPDIV
+
+      ---         MODULE    ---      ---       ?C?FTNPWR
+      01000403H   PUBLIC    CODE     ---       ?C?FTNPWR
+
+      ---         MODULE    ---      ---       ?C?FPGETOPN
+      01000443H   PUBLIC    CODE     ---       ?C?FPGETOPN2
+      01000478H   PUBLIC    CODE     ---       ?C?FPNANRESULT
+      01000482H   PUBLIC    CODE     ---       ?C?FPOVERFLOW
+      0100045AH   PUBLIC    CODE     ---       ?C?FPRESULT
+      0100046EH   PUBLIC    CODE     ---       ?C?FPRESULT2
+      0100047FH   PUBLIC    CODE     ---       ?C?FPUNDERFLOW
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/24/2025  09:44:00  PAGE 5
+
+
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?CLDPTR
+      0100048DH   PUBLIC    CODE     ---       ?C?CLDPTR
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      010004A6H   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      010004D3H   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C?PLDIIDATA
+      010004E5H   PUBLIC    CODE     ---       ?C?PLDIIDATA
+
+      ---         MODULE    ---      ---       ?C?CCASE
+      010004F5H   PUBLIC    CODE     ---       ?C?CCASE
+
+      ---         MODULE    ---      ---       PUTCHAR
+      01000AACH   PUBLIC    CODE     ---       _PUTCHAR
+
+      ---         MODULE    ---      ---       STRLEN
+      01000B1FH   PUBLIC    CODE     ---       _STRLEN
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000A67H   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=77.2 xdata=0 const=3 code=2906
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

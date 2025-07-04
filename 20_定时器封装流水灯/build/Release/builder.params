@@ -1,0 +1,72 @@
+{
+    "name": "20_定时器封装流水灯",
+    "target": "Release",
+    "toolchain": "Keil_C51",
+    "toolchainLocation": "d:\\Development\\Keil_v5\\C51",
+    "toolchainCfgFile": "c:\\Users\\WH-HKB\\.vscode\\extensions\\cl.eide-3.21.3\\res\\data\\models\\win32/8051.keil.model.json",
+    "buildMode": "normal|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 8,
+    "rootDir": "c:\\Users\\WH-HKB\\Desktop\\VS51Code\\250515_Projects\\20_定时器封装流水灯",
+    "dumpPath": "build\\Release",
+    "outDir": "build\\Release",
+    "incDirs": [
+        "d:/Development/Keil_v5/C51/INC/STC",
+        "d:/Development/Keil_v5/C51/INC"
+    ],
+    "libDirs": [],
+    "defines": [
+        "__UVISION_VERSION=526"
+    ],
+    "sourceList": [
+        "src/Com/Com_Util.c",
+        "src/Dri/Dri_Timer0.c",
+        "src/Int/Int_FlowLed.c",
+        "src/main.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 2,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "ram-mode": "SMALL",
+            "rom-mode": "LARGE"
+        },
+        "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8",
+            "optimization": "8,SPEED"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "remove-unused": true,
+            "output-format": "elf"
+        }
+    },
+    "env": {
+        "workspaceFolder": "c:\\Users\\WH-HKB\\Desktop\\VS51Code\\250515_Projects\\20_定时器封装流水灯",
+        "workspaceFolderBasename": "20_定时器封装流水灯",
+        "OutDir": "c:\\Users\\WH-HKB\\Desktop\\VS51Code\\250515_Projects\\20_定时器封装流水灯\\build\\Release",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Release",
+        "ProjectName": "20_定时器封装流水灯",
+        "ConfigName": "Release",
+        "ProjectRoot": "c:\\Users\\WH-HKB\\Desktop\\VS51Code\\250515_Projects\\20_定时器封装流水灯",
+        "ExecutableName": "c:\\Users\\WH-HKB\\Desktop\\VS51Code\\250515_Projects\\20_定时器封装流水灯\\build\\Release\\20_定时器封装流水灯",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\WH-HKB\\.vscode\\extensions\\cl.eide-3.21.3\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\WH-HKB\\.eide\\bin\\builder\\msys\\bin",
+        "ToolchainRoot": "d:\\Development\\Keil_v5\\C51"
+    },
+    "sysPaths": []
+}

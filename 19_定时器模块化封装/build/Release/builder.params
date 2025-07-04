@@ -1,0 +1,71 @@
+{
+    "name": "19_定时器模块化封装",
+    "target": "Release",
+    "toolchain": "Keil_C51",
+    "toolchainLocation": "e:\\project_ruanjian\\Keil_C51\\C51",
+    "toolchainCfgFile": "c:\\Users\\32262\\.vscode\\extensions\\cl.eide-3.21.3\\res\\data\\models\\win32/8051.keil.model.json",
+    "buildMode": "normal|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 8,
+    "rootDir": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day04\\代码\\19_定时器模块化封装",
+    "dumpPath": "build\\Release",
+    "outDir": "build\\Release",
+    "incDirs": [
+        "d:/Development/Keil_v5/C51/INC/STC",
+        "../../../../../../../project_ruanjian/Keil_C51/C51/INC"
+    ],
+    "libDirs": [],
+    "defines": [
+        "__UVISION_VERSION=526"
+    ],
+    "sourceList": [
+        "src/Com/Com_Util.c",
+        "src/Dri/Dri_Timer0.c",
+        "src/main.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 2,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "ram-mode": "SMALL",
+            "rom-mode": "LARGE"
+        },
+        "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8",
+            "optimization": "8,SPEED"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "remove-unused": true,
+            "output-format": "elf"
+        }
+    },
+    "env": {
+        "workspaceFolder": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day04\\代码\\19_定时器模块化封装",
+        "workspaceFolderBasename": "19_定时器模块化封装",
+        "OutDir": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day04\\代码\\19_定时器模块化封装\\build\\Release",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Release",
+        "ProjectName": "19_定时器模块化封装",
+        "ConfigName": "Release",
+        "ProjectRoot": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day04\\代码\\19_定时器模块化封装",
+        "ExecutableName": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day04\\代码\\19_定时器模块化封装\\build\\Release\\19_定时器模块化封装",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\32262\\.vscode\\extensions\\cl.eide-3.21.3\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\32262\\.eide\\bin\\builder\\msys\\bin",
+        "ToolchainRoot": "e:\\project_ruanjian\\Keil_C51\\C51"
+    },
+    "sysPaths": []
+}
