@@ -1,0 +1,26 @@
+[2025-06-25 10:52:30]	[done]
+	build successfully !
+
+[2025-06-25 10:55:40]	[done]
+	build successfully !
+
+[2025-06-25 11:12:23]	[done]
+	build successfully !
+
+[2025-06-25 11:15:50]	compilation failed at : "c:\Users\WH-HKB\Desktop\VS51Code\250515_Projects\22_定时器封装按键切换案例\src\Int\Int_Buzzer.c", exit code: 2
+command: 
+  "d:\Development\Keil_v5\C51\BIN\C51.exe" .\src\Int\Int_Buzzer.c OMF2 TABS(4) CODE NOCOND SYMBOLS PRINT(.\build\Release\.obj\src\Int\Int_Buzzer.lst) INCDIR(d:/Development/Keil_v5/C51/INC/STC;d:/Development/Keil_v5/C51/INC) DEFINE(__UVISION_VERSION='526') OPTIMIZE(8,SPEED) SMALL ROM(LARGE) OBJECT(.\build\Release\.obj\src\Int\Int_Buzzer.o)
+   at unify_builder.Program.Main(String[] args_)
+---
+C51 COMPILER V9.60.7.0 - SN: K1DZC-4PZPXC
+COPYRIGHT Copyright (C) 2012 - 2022 ARM Limited or its Affiliates. All rights reserved.
+*** ERROR C231 IN LINE 47 OF .\src\Int\Int_Buzzer.c: 'count': redefinition
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2025-06-25 11:16:09]	[done]
+	build successfully !
+
+[2025-06-25 11:17:19]	[done]
+	build successfully !
+

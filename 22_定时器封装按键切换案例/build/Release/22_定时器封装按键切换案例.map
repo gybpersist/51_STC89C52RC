@@ -1,0 +1,383 @@
+LX51 LINKER/LOCATER V4.66.100.0                                                         06/25/2025  11:17:18  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.100.0, INVOKED BY:
+D:\DEVELOPMENT\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\RELEASE\.OBJ\SRC\COM\COM_UTIL.O, .\BUILD\RELEASE\.OBJ\SRC\DRI\DRI_TIMER0
+>> .O, .\BUILD\RELEASE\.OBJ\SRC\INT\INT_BUZZER.O, .\BUILD\RELEASE\.OBJ\SRC\INT\INT_DIGTALTUBE.O, .\BUILD\RELEASE\.OBJ\SR
+>> C\INT\INT_FLOWLED.O, .\BUILD\RELEASE\.OBJ\SRC\INT\INT_KEY.O, .\BUILD\RELEASE\.OBJ\SRC\MAIN.O TO .\BUILD\RELEASE\22_定
+>> 时器封装按键切换案例 PRINT (.\build\Release\22_定时器封装按键切换案例.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\RELEASE\.OBJ\SRC\COM\COM_UTIL.O (COM_UTIL)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRI\DRI_TIMER0.O (DRI_TIMER0)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_BUZZER.O (INT_BUZZER)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_DIGTALTUBE.O (INT_DIGTALTUBE)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_FLOWLED.O (INT_FLOWLED)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\INT\INT_KEY.O (INT_KEY)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?ULDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?ULCMP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C?ICALL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\DEVELOPMENT\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\RELEASE\22_定时器封装按键切换案例 (COM_UTIL)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0004F6H   CODE
+I:000000H   I:000000H   I:00007FH   000034H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\RELEASE\22_定时器封装按键切换案例 (COM_UTIL)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00001AH   000013H   BYTE   UNIT     DATA           ?DT?INT_DIGTALTUBE
+00001BH   000026H   00000CH   BYTE   UNIT     DATA           ?DT?DRI_TIMER0
+000027H   00002CH   000006H   BYTE   UNIT     DATA           _DATA_GROUP_
+00002DH   000030H   000004H   BYTE   UNIT     DATA           ?DT?INT_BUZZER
+000031H   000033H   000003H   BYTE   UNIT     DATA           ?DT?INT_FLOWLED
+000034H   000034H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/25/2025  11:17:18  PAGE 2
+
+
+000003H   00000AH   000008H   ---    ---      **GAP**
+00000BH   00000DH   000003H   BYTE   OFFS..   CODE           ?DRI_TIMER0?0000B
+00000EH   000147H   00013AH   BYTE   UNIT     CODE           ?C?LIB_CODE
+000148H   0001D3H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+0001D4H   000243H   000070H   BYTE   UNIT     CODE           ?PR?TIMER0_HANDLER?DRI_TIMER0
+000244H   0002B2H   00006FH   BYTE   UNIT     CODE           ?PR?_INT_DIGTALTUBE_SETBUFFER?INT_DIGTALTUBE
+0002B3H   000316H   000064H   BYTE   UNIT     CODE           ?PR?_DRI_TIMER0_REGISTERCALLBACK?DRI_TIMER0
+000317H   00035BH   000045H   BYTE   UNIT     CODE           ?PR?_DRI_TIMER0_DEREGISTERCALLBACK?DRI_TIMER0
+00035CH   000392H   000037H   BYTE   UNIT     CODE           ?C_INITSEG
+000393H   0003C9H   000037H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0003CAH   0003F8H   00002FH   BYTE   UNIT     CODE           ?PR?INT_FLOWLED_REFRESH?INT_FLOWLED
+0003F9H   000423H   00002BH   BYTE   UNIT     CODE           ?PR?INT_BUZZER_BUZZLOW?INT_BUZZER
+000424H   00043DH   00001AH   BYTE   UNIT     CODE           ?PR?_DELAYMS?COM_UTIL
+00043EH   000455H   000018H   BYTE   UNIT     CODE           ?PR?DIGTALTUBE_REFRESH?INT_DIGTALTUBE
+000456H   000469H   000014H   BYTE   UNIT     CODE           ?PR?INT_KEY_ISSW1PRESSED?INT_KEY
+00046AH   00047DH   000014H   BYTE   UNIT     CODE           ?PR?INT_KEY_ISSW2PRESSED?INT_KEY
+00047EH   000491H   000014H   BYTE   UNIT     CODE           ?PR?INT_KEY_ISSW3PRESSED?INT_KEY
+000492H   0004A4H   000013H   BYTE   UNIT     CODE           ?PR?DRI_TIMER0_INIT?DRI_TIMER0
+0004A5H   0004B4H   000010H   BYTE   UNIT     CODE           ?PR?INT_DIGTALTUBE_INIT?INT_DIGTALTUBE
+0004B5H   0004C2H   00000EH   BYTE   UNIT     CODE           ?PR?_DIGTALTUBE_SINGLE?INT_DIGTALTUBE
+0004C3H   0004D0H   00000EH   BYTE   UNIT     CODE           ?PR?INT_FLOWLED_INIT?INT_FLOWLED
+0004D1H   0004DCH   00000CH   BYTE   UNIT     CODE           ?PR?INT_BUZZER_START?INT_BUZZER
+0004DDH   0004E7H   00000BH   BYTE   UNIT     CODE           ?PR?INT_BUZZER_STOP?INT_BUZZER
+0004E8H   0004F2H   00000BH   BYTE   UNIT     CODE           ?PR?INT_DIGTALTUBE_STOP?INT_DIGTALTUBE
+0004F3H   0004FDH   00000BH   BYTE   UNIT     CODE           ?PR?INT_FLOWLED_STOP?INT_FLOWLED
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           000003H   BYTE   UNIT     CODE           ?PR?INT_BUZZER_BUZZ?INT_BUZZER
+   *DEL*:           00002BH   BYTE   UNIT     CODE           ?PR?INT_BUZZER_BUZZLOUD?INT_BUZZER
+   *DEL*:           000014H   BYTE   UNIT     CODE           ?PR?INT_KEY_ISSW4PRESSED?INT_KEY
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\RELEASE\22_定时器封装按键切换案例 (COM_UTIL)
+
+
+FUNCTION/MODULE                                BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE                    START  STOP  START  STOP
+======================================================================
+TIMER0_HANDLER/DRI_TIMER0                     ----- -----  0027H 0027H
+
+*** NEW ROOT ********************************
+
+?C_C51STARTUP                                 ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                                     ----- -----  ----- -----
+  +--> INT_KEY_ISSW1PRESSED/INT_KEY
+  +--> INT_BUZZER_STOP/INT_BUZZER
+  +--> INT_DIGTALTUBE_STOP/INT_DIGTALTUBE
+  +--> INT_FLOWLED_INIT/INT_FLOWLED
+  +--> INT_KEY_ISSW2PRESSED/INT_KEY
+  +--> INT_FLOWLED_STOP/INT_FLOWLED
+  +--> _INT_DIGTALTUBE_SETBUFFER/INT_DIGTALTUBE
+  +--> INT_DIGTALTUBE_INIT/INT_DIGTALTUBE
+  +--> INT_KEY_ISSW3PRESSED/INT_KEY
+  +--> INT_BUZZER_START/INT_BUZZER
+
+INT_KEY_ISSW1PRESSED/INT_KEY                  ----- -----  ----- -----
+  +--> _DELAYMS/COM_UTIL
+
+_DELAYMS/COM_UTIL                             ----- -----  ----- -----
+
+INT_BUZZER_STOP/INT_BUZZER                    ----- -----  ----- -----
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/25/2025  11:17:18  PAGE 3
+
+
+  +--> INT_BUZZER_BUZZLOW/INT_BUZZER
+  +--> _DRI_TIMER0_DEREGISTERCALLBACK/DRI_TIMER0
+
+INT_BUZZER_BUZZLOW/INT_BUZZER                 ----- -----  ----- -----
+
+_DRI_TIMER0_DEREGISTERCALLBACK/DRI_TIMER+     ----- -----  0028H 002AH
+... 0
+
+INT_DIGTALTUBE_STOP/INT_DIGTALTUBE            ----- -----  ----- -----
+  +--> DIGTALTUBE_REFRESH/INT_DIGTALTUBE
+  +--> _DRI_TIMER0_DEREGISTERCALLBACK/DRI_TIMER0
+
+DIGTALTUBE_REFRESH/INT_DIGTALTUBE             ----- -----  ----- -----
+  +--> _DIGTALTUBE_SINGLE/INT_DIGTALTUBE
+
+_DIGTALTUBE_SINGLE/INT_DIGTALTUBE             ----- -----  ----- -----
+
+INT_FLOWLED_INIT/INT_FLOWLED                  ----- -----  ----- -----
+  +--> DRI_TIMER0_INIT/DRI_TIMER0
+  +--> INT_FLOWLED_REFRESH/INT_FLOWLED
+  +--> _DRI_TIMER0_REGISTERCALLBACK/DRI_TIMER0
+
+DRI_TIMER0_INIT/DRI_TIMER0                    ----- -----  ----- -----
+
+INT_FLOWLED_REFRESH/INT_FLOWLED               ----- -----  ----- -----
+
+_DRI_TIMER0_REGISTERCALLBACK/DRI_TIMER0       ----- -----  0028H 002AH
+
+INT_KEY_ISSW2PRESSED/INT_KEY                  ----- -----  ----- -----
+  +--> _DELAYMS/COM_UTIL
+
+INT_FLOWLED_STOP/INT_FLOWLED                  ----- -----  ----- -----
+  +--> INT_FLOWLED_REFRESH/INT_FLOWLED
+  +--> _DRI_TIMER0_DEREGISTERCALLBACK/DRI_TIMER0
+
+_INT_DIGTALTUBE_SETBUFFER/INT_DIGTALTUBE      ----- -----  0028H 002CH
+
+INT_DIGTALTUBE_INIT/INT_DIGTALTUBE            ----- -----  ----- -----
+  +--> DRI_TIMER0_INIT/DRI_TIMER0
+  +--> DIGTALTUBE_REFRESH/INT_DIGTALTUBE
+  +--> _DRI_TIMER0_REGISTERCALLBACK/DRI_TIMER0
+
+INT_KEY_ISSW3PRESSED/INT_KEY                  ----- -----  ----- -----
+  +--> _DELAYMS/COM_UTIL
+
+INT_BUZZER_START/INT_BUZZER                   ----- -----  ----- -----
+  +--> DRI_TIMER0_INIT/DRI_TIMER0
+  +--> INT_BUZZER_BUZZLOW/INT_BUZZER
+  +--> _DRI_TIMER0_REGISTERCALLBACK/DRI_TIMER0
+
+?C_INITSEG                                    ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\RELEASE\22_定时器封装按键切换案例 (COM_UTIL)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      01000142H   CODE     ---       ?C?ICALL
+      01000146H   CODE     ---       ?C?ICALL2
+      0100000EH   CODE     ---       ?C?UIDIV
+      01000131H   CODE     ---       ?C?ULCMP
+      0100009FH   CODE     ---       ?C?ULDIV
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/25/2025  11:17:18  PAGE 4
+
+
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      0100018FH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000424H   CODE     ---       _Delayms
+      01000317H   CODE     ---       _Dri_Timer0_DeregisterCallBack
+      010002B3H   CODE     ---       _Dri_Timer0_RegisterCallBack
+      01000244H   CODE     ---       _Int_DigtalTube_setBuffer
+      01000492H   CODE     ---       Dri_Timer0_Init
+*DEL*:00000000H   CODE     ---       Int_Buzzer_Buzz
+*DEL*:00000000H   CODE     ---       Int_Buzzer_BuzzLoud
+      010003F9H   CODE     ---       Int_Buzzer_BuzzLow
+      010004D1H   CODE     ---       Int_Buzzer_Start
+      010004DDH   CODE     ---       Int_Buzzer_Stop
+      010004A5H   CODE     ---       Int_DigtalTube_Init
+      010004E8H   CODE     ---       Int_DigtalTube_Stop
+      010004C3H   CODE     ---       Int_FLowLed_Init
+      010004F3H   CODE     ---       Int_FLowLed_Stop
+      01000456H   CODE     ---       Int_Key_IsSW1Pressed
+      0100046AH   CODE     ---       Int_Key_IsSW2Pressed
+      0100047EH   CODE     ---       Int_Key_IsSW3Pressed
+*DEL*:00000000H   CODE     ---       Int_Key_IsSW4Pressed
+      01000393H   CODE     ---       main
+      010001D4H   CODE     ---       Timer0_Handler
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\22_定时器封装按键切换案例 (COM_UTIL)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       COM_UTIL
+      01000424H   PUBLIC    CODE     ---       _Delayms
+
+      01000424H   BLOCK     CODE     ---       LVL=0
+      01000424H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     VOID      i
+      00000004H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       DRI_TIMER0
+      010001D4H   PUBLIC    CODE     ---       Timer0_Handler
+      01000317H   PUBLIC    CODE     ---       _Dri_Timer0_DeregisterCallBack
+      010002B3H   PUBLIC    CODE     ---       _Dri_Timer0_RegisterCallBack
+      01000492H   PUBLIC    CODE     ---       Dri_Timer0_Init
+
+      01000492H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010002B3H   BLOCK     CODE     ---       LVL=0
+      010002B9H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000317H   BLOCK     CODE     ---       LVL=0
+      0100031DH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001D4H   BLOCK     CODE     ---       LVL=0
+      010001F1H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000027H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/25/2025  11:17:18  PAGE 5
+
+
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       INT_BUZZER
+      010004DDH   PUBLIC    CODE     ---       Int_Buzzer_Stop
+      010004D1H   PUBLIC    CODE     ---       Int_Buzzer_Start
+      010003F9H   PUBLIC    CODE     ---       Int_Buzzer_BuzzLow
+      0000002DH   SYMBOL    DATA     VOID      count
+
+      010003F9H   BLOCK     CODE     ---       LVL=0
+      010003F9H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000002FH   SYMBOL    DATA     VOID      count
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004D1H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004DDH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       INT_DIGTALTUBE
+      010004E8H   PUBLIC    CODE     ---       Int_DigtalTube_Stop
+      010004A5H   PUBLIC    CODE     ---       Int_DigtalTube_Init
+      01000244H   PUBLIC    CODE     ---       _Int_DigtalTube_setBuffer
+
+      010004B5H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100043EH   BLOCK     CODE     ---       LVL=0
+      0100043EH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000008H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000244H   BLOCK     CODE     ---       LVL=0
+      0100024CH   BLOCK     CODE     NEAR LAB  LVL=1
+      0000002CH   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004A5H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004E8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       INT_FLOWLED
+      010004F3H   PUBLIC    CODE     ---       Int_FLowLed_Stop
+      010004C3H   PUBLIC    CODE     ---       Int_FLowLed_Init
+
+      010003CAH   BLOCK     CODE     ---       LVL=0
+      010003CAH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000031H   SYMBOL    DATA     VOID      temp
+      00000032H   SYMBOL    DATA     VOID      count
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004C3H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004F3H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       INT_KEY
+      0100047EH   PUBLIC    CODE     ---       Int_Key_IsSW3Pressed
+LX51 LINKER/LOCATER V4.66.100.0                                                       06/25/2025  11:17:18  PAGE 6
+
+
+      0100046AH   PUBLIC    CODE     ---       Int_Key_IsSW2Pressed
+      01000456H   PUBLIC    CODE     ---       Int_Key_IsSW1Pressed
+
+      01000456H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100046AH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100047EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      01000393H   PUBLIC    CODE     ---       main
+
+      01000393H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?UIDIV
+      0100000EH   PUBLIC    CODE     ---       ?C?UIDIV
+
+      ---         MODULE    ---      ---       ?C?ULDIV
+      0100009FH   PUBLIC    CODE     ---       ?C?ULDIV
+
+      ---         MODULE    ---      ---       ?C?ULCMP
+      01000131H   PUBLIC    CODE     ---       ?C?ULCMP
+
+      ---         MODULE    ---      ---       ?C?ICALL
+      01000142H   PUBLIC    CODE     ---       ?C?ICALL
+      01000146H   PUBLIC    CODE     ---       ?C?ICALL2
+
+      ---         MODULE    ---      ---       ?C_INIT
+      0100018FH   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=53.0 xdata=0 const=0 code=1270
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

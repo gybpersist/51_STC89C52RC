@@ -1,0 +1,72 @@
+{
+    "name": "23_点阵屏静态显示",
+    "target": "Release",
+    "toolchain": "Keil_C51",
+    "toolchainLocation": "e:\\project_ruanjian\\Keil_C51\\C51",
+    "toolchainCfgFile": "c:\\Users\\32262\\.vscode\\extensions\\cl.eide-3.21.4\\res\\data\\models\\win32/8051.keil.model.json",
+    "buildMode": "normal|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 8,
+    "rootDir": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day05\\代码\\23_点阵屏静态显示",
+    "dumpPath": "build\\Release",
+    "outDir": "build\\Release",
+    "incDirs": [
+        "../../../../../../../project_ruanjian/Keil_C51/C51/INC/STC",
+        "../../../../../../../project_ruanjian/Keil_C51/C51/INC"
+    ],
+    "libDirs": [],
+    "defines": [
+        "__UVISION_VERSION=526"
+    ],
+    "sourceList": [
+        "src/Com/Com_Util.c",
+        "src/Dri/Dri_Timer0.c",
+        "src/Int/Int_MatrixLED.c",
+        "src/main.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 2,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "ram-mode": "SMALL",
+            "rom-mode": "LARGE"
+        },
+        "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8",
+            "optimization": "8,SPEED"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "remove-unused": true,
+            "output-format": "elf"
+        }
+    },
+    "env": {
+        "workspaceFolder": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day05\\代码\\23_点阵屏静态显示",
+        "workspaceFolderBasename": "23_点阵屏静态显示",
+        "OutDir": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day05\\代码\\23_点阵屏静态显示\\build\\Release",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Release",
+        "ProjectName": "23_点阵屏静态显示",
+        "ConfigName": "Release",
+        "ProjectRoot": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day05\\代码\\23_点阵屏静态显示",
+        "ExecutableName": "e:\\c语言资料\\wh0515\\06_51单片机\\day\\Day05\\代码\\23_点阵屏静态显示\\build\\Release\\23_点阵屏静态显示",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\32262\\.vscode\\extensions\\cl.eide-3.21.4\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\32262\\.eide\\bin\\builder\\msys\\bin",
+        "ToolchainRoot": "e:\\project_ruanjian\\Keil_C51\\C51"
+    },
+    "sysPaths": []
+}

@@ -1,0 +1,17 @@
+>>> cc
+
+
+
+>>> ld
+
+
+LX51 LINKER/LOCATER V4.66.100.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 1995-2021, Arm Limited or its Affiliates. All rights reserved.
+@e:\c语言资料\wh0515\06_51单片机\day\Day05\代码\23_点阵屏静态显示\build\Release\23_点阵屏静态显示.lnp .\build\Release\.obj\src\Com\Com_Util.o,.\build\Release\.obj\src\Dri\Dri_Timer0.o,.\build\Release\.obj\src\Int\Int_MatrixLED.o,.\build\Release\.obj\src\main.o TO .\build\Release\23_点阵屏静态显示
+PRINT(.\build\Release\23_点阵屏静态显示.map) REMOVEUNUSED
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 023DH BYTE (27%) *
+******************************************************************************
+
+Program Size: data=60.0 xdata=0 const=24 code=876
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
