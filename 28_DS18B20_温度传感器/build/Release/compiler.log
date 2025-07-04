@@ -1,0 +1,17 @@
+>>> cc
+
+
+
+>>> ld
+
+
+LX51 LINKER/LOCATER V4.66.100.0 - SN: Eval Version
+COPYRIGHT Copyright (C) 1995-2021, Arm Limited or its Affiliates. All rights reserved.
+@e:\c语言资料\wh0515\06_51单片机\day\Day09\代码\28_DS18B20_温度传感器\build\Release\28_DS18B20_温度传感器.lnp .\build\Release\.obj\src\Com\Com_Util.o,.\build\Release\.obj\src\Dri\Dri_1Wire.o,.\build\Release\.obj\src\Dri\Dri_IIC.o,.\build\Release\.obj\src\Dri\Dri_Timer0.o,.\build\Release\.obj\src\Int\Int_18B20.o,.\build\Release\.obj\src\Int\Int_OLED.o,.\build\Release\.obj\src\main.o TO .\build\Release\28_DS18B20_温度传感器
+PRINT(.\build\Release\28_DS18B20_温度传感器.map) REMOVEUNUSED
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0744H BYTE (90%) *
+******************************************************************************
+
+Program Size: data=91.1 xdata=0 const=613 code=3843
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
