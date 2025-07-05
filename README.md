@@ -52,3 +52,11 @@ EIDE支持多种芯片的开发，所以可以为不同的芯片配置不同的�
 ![图片15.png](https://img.picui.cn/free/2025/07/04/686734624a6c0.png)
 - （2）选择STC头文件所在目录
 ![图片16.png](https://img.picui.cn/free/2025/07/04/686734635af16.png)
+
+## VS Code 烧录配置
+1. 安装 python 运行环境
+2. 在 win+R cmd 命令行安装
+   - pip install pyserial -i https://pypi.tuna.tsinghua.edu.cn/simple
+   - pip install stcgal -i https://pypi.tuna.tsinghua.edu.cn/simple
+4. 侧边栏上方，烧录配置，点击“切换烧录器”的符号，选择 stcgal
+
