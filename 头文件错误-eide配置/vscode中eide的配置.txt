@@ -1,0 +1,4 @@
+---------------- 注意 : 在模块化编程模板项目中修改,然后再生成新的模板就可以了-----------------
+
+"EIDE.SourceTree.AutoSearchIncludePath": true,
+"EIDE.SourceTree.AutoSearchObjFile": true,
